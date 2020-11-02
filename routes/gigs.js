@@ -73,7 +73,9 @@ router.get('/search', (req,res)=>{
     // lower case
     term = term.toLowerCase();
 
-    Gig.findAll({where: {technologies: { [Op.like]: '%'+term+'%'}}});
+    Gig.findAll({where: {technologies: { [Op.like]: '%'+term+'%'}}})
+    .then(gigs => res.render('gigs', {gigs}))
+    .catch(err => console.log(err));
    
 });
 module.exports = router;
