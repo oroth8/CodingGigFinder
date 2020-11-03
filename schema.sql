@@ -1,4 +1,3 @@
-DROP DATABASE IF EXISTS `codeGig_db`;
 CREATE DATABASE `codeGig_db`;
 USE `codeGig_db`;
 

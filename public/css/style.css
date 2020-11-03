@@ -103,7 +103,8 @@ header.inner {
 
 /* Home Search */
 .search-wrap {
-  background: url('../img/showcase.jpg') no-repeat center center fixed / cover;
+  /* background: url('../img/showcase.jpg') no-repeat center center fixed / cover; */
+  background-image: url("../img/showcase.jpg");
   height: 100vh;
   width: 100%;
   padding: 1.3rem 3rem;
@@ -111,6 +112,10 @@ header.inner {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+}
+.backImg{
+  background-image: url("../img/showcase.jpg");
 }
 
 .search-wrap h1 {

@@ -9,6 +9,7 @@ const Op = Sequelize.Op;
 router.get('/', (req,res)=> 
 Gig.findAll()
 .then(gigs => {
+    console.log(gigs);
     res.render('gigs', {
         gigs
     });
